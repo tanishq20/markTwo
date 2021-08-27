@@ -67,7 +67,7 @@ function play(question, answer, a, b, c){
   }
   else{
     console.log(chalk.bgRedBright.white("\nYou are wrong!"));
-    console.log(chalk.green("Correct answer is: "+answer));
+    // console.log(chalk.green("Correct answer is: "+answer));
   }
 console.log("Your Score: ",score);
 console.log("\n--------------------------")
