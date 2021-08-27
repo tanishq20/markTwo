@@ -76,3 +76,31 @@ console.log("\n--------------------------")
 for(var i=0; i<questions.length; i++){
   play(questions[i].question, questions[i].answer, questions[i].a, questions[i].b, questions[i].c)
 }
+
+console.log(chalk.red.bold.bgWhite(" YAY! You scored: "+chalk.green.bold(score) + " "));
+
+var highestScore = [
+  {
+    name: 'Sahil',
+    score: 6
+  },
+  {
+    name: 'Hemant',
+    score: 6
+  },
+  {
+    name: 'Swaroop',
+    score: 5
+  }
+]
+
+console.log("--------------------------------");
+
+console.log("Leaderboard:");
+for(var i=0; i<highestScore.length; i++){
+  console.log(highestScore[i].name, highestScore[i].score);
+}
+
+console.log("--------------------------------");
+
+console.log(("If your score is highest then ping me")+chalk.blue.bold(" @tanishq_kumar20 ")+("with score ss😉"));
